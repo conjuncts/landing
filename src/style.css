@@ -14,9 +14,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
+a, a:visited {
+  /* font-weight: 500; */
+  /* color: #646cff; */
+  color: rgb(0, 0, 238);
   text-decoration: inherit;
 }
 a:hover {
@@ -33,6 +34,10 @@ body {
 
 h1 {
   font-size: 3.2em;
+  line-height: 1.1;
+}
+h2 {
+  font-size: 2.4em;
   line-height: 1.1;
 }
 
@@ -57,7 +62,9 @@ h1 {
 }
 
 .card {
+  /* text-align: left; */
   padding: 2em;
+  max-width: 40em;
 }
 .card ul {
   text-align: left;
@@ -100,13 +107,13 @@ button:focus-visible {
 }
 
 @supports (background-clip: text) or (-webkit-background-clip: text) {
-  h1 {
+  .gradient {
     background: linear-gradient(#22d4fe, #b722ff);
     /* background: linear-gradient(#40c9ff, #e81cff); */
     /* background: linear-gradient(#b2f5fe, #595cff); */
     /* background: linear-gradient(#f8acff, #696eff); */
     /* background: linear-gradient(#ff0f7b, #f89b29); */
-    background: linear-gradient(#2feaa8 , #028cf3);
+    /* background: linear-gradient(#2feaa8 , #028cf3); */
 
     /*Thank you https://coolors.co/gradients!*/
 
@@ -117,6 +124,20 @@ button:focus-visible {
     
   }
 } 
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .gradient-grey {
+    background: linear-gradient(#96d4ca, #7c65a9);
+    background: linear-gradient(#96d4ca, #7c65a9);
+    /*Thank you https://coolors.co/gradients!*/
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding: 0.1em;
+    color: transparent;
+
+  }
+}
 .socials {
   margin-top: -1.5em;
 }
